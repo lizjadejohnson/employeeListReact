@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .App-logo {
@@ -27,6 +29,83 @@
 .App-link {
   color: #61dafb;
 }
+
+.homepage{
+  border:solid rgb(255, 228, 28);
+  width: 50%;
+}
+
+.employeepage{
+  border: solid rgb(119, 59, 43);
+  width: 50%;
+}
+
+.emp_li {
+  border: solid red;
+  margin: .1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* This will place one element on the far left and the other on the far right */
+  align-items: center;
+}
+
+.emp_li_left, .emp_li_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensures vertical centering of all items in the column */
+  border:  solid pink;
+}
+
+.emp_li_left{
+  width: 20%;
+  align-items: center;
+}
+
+.emp_li_right{
+  width: 80%;
+  align-items: flex-start;
+}
+
+/* .image, .name, .jobTitle {
+  margin: 0.5em; 
+  padding: 0.5em;
+} */
+
+.empListContainer {
+  border: solid rgb(179, 0, 179);
+  margin: .1em;
+}
+
+.header{
+  border: solid rgb(0, 135, 180);
+  margin: .1em;
+}
+
+
+.sbar {
+  border: solid green;
+  margin: .1em;
+}
+
+.sbar input{
+  width: 98%;
+}
+
+.empCard{
+  border: solid gray;
+  margin: 0.1em;
+}
+
+.contact_li {
+  border-top: solid gray;
+  margin: 0.1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Places left on the left and right on the right */
+  align-items: center;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
